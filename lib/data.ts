@@ -360,7 +360,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   },
   {
     question: "How do I install a snapshot?",
-    answer: "After purchasing, you'll receive a GHL snapshot share link. Simply click the link, choose which sub-account to install it into, and everything will be imported automatically. The entire process takes about 60 seconds.",
+    answer: "After purchasing, you'll receive a GHL snapshot share link. Simply click the link, choose which sub-account to install it into, and everything will be imported automatically. The entire process takes under 5 minutes.",
   },
   {
     question: "Do I need a GoHighLevel account?",
@@ -413,7 +413,7 @@ export const STATS: Stat[] = [
   { value: "25+", label: "Industry Snapshots" },
   { value: "500+", label: "Agencies Served" },
   { value: "15+", label: "Industries Covered" },
-  { value: "60s", label: "Average Install Time" },
+  { value: "<5min", label: "Average Install Time" },
 ];
 
 export const CATEGORIES = [

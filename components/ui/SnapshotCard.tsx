@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Badge } from "./Badge";
+import { SnapshotGraphic } from "./SnapshotGraphic";
 import type { Snapshot } from "@/lib/types";
 
 interface SnapshotCardProps {
@@ -24,24 +25,11 @@ export function SnapshotCard({ snapshot }: SnapshotCardProps) {
         className="group block rounded-2xl border border-card-border bg-card/60 backdrop-blur-sm overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5"
       >
         {/* Thumbnail */}
-        <div
-          className="relative h-44 flex items-center justify-center overflow-hidden"
-          style={{
-            background: `linear-gradient(135deg, ${snapshot.thumbnailGradient[0]}, ${snapshot.thumbnailGradient[1]})`,
-          }}
-        >
-          <div className="absolute inset-0 bg-black/20" />
-          <div className="relative flex flex-col items-center gap-2">
-            <div className="w-48 h-28 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center">
-              <div className="space-y-1.5 px-3 w-full">
-                <div className="h-2 bg-white/30 rounded-full w-3/4" />
-                <div className="h-2 bg-white/20 rounded-full w-1/2" />
-                <div className="h-2 bg-white/20 rounded-full w-5/6" />
-                <div className="h-1.5 bg-white/10 rounded-full w-2/3 mt-2" />
-                <div className="h-1.5 bg-white/10 rounded-full w-1/2" />
-              </div>
-            </div>
-          </div>
+        <div className="relative">
+          <SnapshotGraphic
+            slug={snapshot.slug}
+            gradient={snapshot.thumbnailGradient}
+          />
           <div className="absolute top-3 left-3">
             <Badge>{snapshot.category}</Badge>
           </div>

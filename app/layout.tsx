@@ -10,11 +10,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "SnapshotHub — Pre-Built GoHighLevel Snapshots for Every Industry",
   description:
-    "Browse 25+ industry-specific GHL snapshots. Pre-built CRM, pipelines, automations, and funnels. Install in 60 seconds.",
+    "Browse 25+ industry-specific GHL snapshots. Pre-built CRM, pipelines, automations, and funnels. Install in under 5 minutes.",
   openGraph: {
     title: "SnapshotHub — Pre-Built GoHighLevel Snapshots for Every Industry",
     description:
-      "Browse 25+ industry-specific GHL snapshots. Pre-built CRM, pipelines, automations, and funnels. Install in 60 seconds.",
+      "Browse 25+ industry-specific GHL snapshots. Pre-built CRM, pipelines, automations, and funnels. Install in under 5 minutes.",
     type: "website",
     locale: "en_US",
   },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SnapshotHub — Pre-Built GHL Snapshots",
     description:
-      "Browse 25+ industry-specific GHL snapshots. Install in 60 seconds.",
+      "Browse 25+ industry-specific GHL snapshots. Install in under 5 minutes.",
   },
 };
 

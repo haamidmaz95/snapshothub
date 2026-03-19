@@ -22,7 +22,7 @@ const STEPS = [
     icon: Zap,
     title: "Install",
     description:
-      "Click the share link, pick your sub-account, and everything imports automatically. Live in 60 seconds.",
+      "Click the share link, pick your sub-account, and everything imports automatically. Live in under 5 minutes.",
   },
 ];
 

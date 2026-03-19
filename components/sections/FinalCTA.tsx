@@ -21,7 +21,7 @@ export function FinalCTA() {
         </FadeIn>
         <FadeIn delay={0.1}>
           <p className="text-lg text-foreground-muted mb-10 max-w-xl mx-auto">
-            Pick a snapshot, install it in 60 seconds, and spend your time on
+            Pick a snapshot, install it in under 5 minutes, and spend your time on
             what actually matters — growing your business.
           </p>
         </FadeIn>

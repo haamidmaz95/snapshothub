@@ -5,6 +5,7 @@ import { ArrowLeft, Check, ExternalLink, Package } from "lucide-react";
 import { SNAPSHOTS } from "@/lib/data";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
+import { SnapshotGraphic } from "@/components/ui/SnapshotGraphic";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -54,22 +55,11 @@ export default async function SnapshotPage({ params }: PageProps) {
           {/* Left column */}
           <div className="lg:col-span-2 space-y-8">
             {/* Thumbnail */}
-            <div
-              className="h-64 md:h-80 rounded-2xl flex items-center justify-center overflow-hidden"
-              style={{
-                background: `linear-gradient(135deg, ${snapshot.thumbnailGradient[0]}, ${snapshot.thumbnailGradient[1]})`,
-              }}
-            >
-              <div className="w-72 h-44 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center">
-                <div className="space-y-2 px-6 w-full">
-                  <div className="h-3 bg-white/30 rounded-full w-3/4" />
-                  <div className="h-3 bg-white/20 rounded-full w-1/2" />
-                  <div className="h-3 bg-white/20 rounded-full w-5/6" />
-                  <div className="h-2 bg-white/10 rounded-full w-2/3 mt-3" />
-                  <div className="h-2 bg-white/10 rounded-full w-1/2" />
-                  <div className="h-2 bg-white/10 rounded-full w-3/4" />
-                </div>
-              </div>
+            <div className="rounded-2xl overflow-hidden [&>div]:!h-64 md:[&>div]:!h-80">
+              <SnapshotGraphic
+                slug={snapshot.slug}
+                gradient={snapshot.thumbnailGradient}
+              />
             </div>
 
             {/* Title & Description */}
@@ -164,8 +154,8 @@ export default async function SnapshotPage({ params }: PageProps) {
               <div className="border-t border-card-border pt-5">
                 <div className="text-xs text-foreground-muted leading-relaxed">
                   Instant delivery via GHL share link. Requires an active
-                  GoHighLevel account. Install into any sub-account in 60
-                  seconds.
+                  GoHighLevel account. Install into any sub-account in under
+                  5 minutes.
                 </div>
               </div>
             </div>

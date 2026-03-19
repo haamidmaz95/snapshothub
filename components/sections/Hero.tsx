@@ -44,7 +44,7 @@ export function Hero() {
         <div className="animate-[fadeInUp_0.6s_ease-out_0.2s_both]">
           <p className="text-lg md:text-xl text-foreground-muted max-w-2xl mx-auto mb-10 leading-relaxed">
             Stop building from scratch. Install a complete CRM, pipeline,
-            automation, and funnel system in 60 seconds.
+            automation, and funnel system in under 5 minutes.
           </p>
         </div>
 
