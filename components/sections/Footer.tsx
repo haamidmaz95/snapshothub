@@ -18,7 +18,7 @@ export function Footer() {
             </a>
           </div>
           <p className="text-sm text-foreground-muted">
-            Built by Hamid Mazumder
+            &copy; {new Date().getFullYear()} SnapshotHub
           </p>
         </div>
       </div>
