@@ -19,11 +19,12 @@ import {
   SprayCan,
   Scale,
   Car,
-  Camera,
   Trophy,
-  Users,
-  Calculator,
-  Fence,
+  Paintbrush,
+  Scissors,
+  PawPrint,
+  Droplets,
+  Landmark,
   BarChart3,
   TrendingUp,
   Mail,
@@ -154,8 +155,8 @@ const INDUSTRY_CONFIG: Record<
     statLabel: "This Week", statValue: "34", listItems: ["Deep Clean — 9am", "Move-Out — 1pm", "Office Weekly"],
     heroText: "Spotless Cleaning Services", heroCta: "Book Now",
   },
-  "law-firm": {
-    icon: Scale, label: "Law Firm", accent: "#94A3B8",
+  lawyers: {
+    icon: Scale, label: "Lawyers", accent: "#94A3B8",
     screenTitle: "Case Management", navItems: ["Cases", "Clients", "Calendar"],
     statLabel: "Active Cases", statValue: "52", listItems: ["Personal Injury", "Family Law Consult", "Estate Planning"],
     heroText: "Experienced Legal Representation", heroCta: "Free Consult",
@@ -166,11 +167,11 @@ const INDUSTRY_CONFIG: Record<
     statLabel: "This Week", statValue: "28", listItems: ["Full Detail — 10am", "Ceramic Coat — 2pm", "Fleet Wash — 8am"],
     heroText: "Premium Auto Detailing", heroCta: "Book Detail",
   },
-  photography: {
-    icon: Camera, label: "Photography", accent: "#FBBF24",
-    screenTitle: "Session Calendar", navItems: ["Sessions", "Gallery", "Clients"],
-    statLabel: "Upcoming", statValue: "16", listItems: ["Wedding — Sat", "Portrait — Mon", "Mini Session — Wed"],
-    heroText: "Capturing Your Best Moments", heroCta: "Book Session",
+  painter: {
+    icon: Paintbrush, label: "Painter", accent: "#FBBF24",
+    screenTitle: "Job Pipeline", navItems: ["Jobs", "Estimates", "Clients"],
+    statLabel: "Active Jobs", statValue: "16", listItems: ["Interior — Mon", "Exterior — Wed", "Commercial — Fri"],
+    heroText: "Professional Painting Services", heroCta: "Get Estimate",
   },
   coaching: {
     icon: Trophy, label: "Coaching", accent: "#C084FC",
@@ -178,23 +179,35 @@ const INDUSTRY_CONFIG: Record<
     statLabel: "Active Clients", statValue: "38", listItems: ["Discovery Call", "Group Session", "Progress Review"],
     heroText: "Unlock Your Full Potential", heroCta: "Book Discovery",
   },
-  recruiting: {
-    icon: Users, label: "Recruiting", accent: "#38BDF8",
-    screenTitle: "Candidate Pipeline", navItems: ["Candidates", "Jobs", "Clients"],
-    statLabel: "Open Roles", statValue: "23", listItems: ["Software Eng.", "Product Manager", "Sales Director"],
-    heroText: "Find Your Next Great Hire", heroCta: "Post Role",
+  "hair-salon": {
+    icon: Scissors, label: "Hair Salon", accent: "#F472B6",
+    screenTitle: "Appointment Book", navItems: ["Bookings", "Clients", "Services"],
+    statLabel: "Today's Appts", statValue: "18", listItems: ["Cut & Color — 10am", "Highlights — 1pm", "Blowout — 3pm"],
+    heroText: "Look Your Best Every Day", heroCta: "Book Appointment",
   },
-  "tax-prep": {
-    icon: Calculator, label: "Tax Preparation", accent: "#34D399",
-    screenTitle: "Filing Tracker", navItems: ["Clients", "Filings", "Docs"],
-    statLabel: "Filed", statValue: "189", listItems: ["Doc Collection", "Review — Draft", "E-File Ready"],
-    heroText: "Accurate Tax Preparation", heroCta: "Start Filing",
+  "pet-grooming": {
+    icon: PawPrint, label: "Pet Grooming", accent: "#4ADE80",
+    screenTitle: "Grooming Schedule", navItems: ["Bookings", "Pets", "Services"],
+    statLabel: "Today's Grooms", statValue: "12", listItems: ["Full Groom — 9am", "Bath & Trim — 11am", "Nail Clip — 2pm"],
+    heroText: "Premium Pet Grooming Services", heroCta: "Book Grooming",
   },
-  fencing: {
-    icon: Fence, label: "Fencing", accent: "#A8A29E",
-    screenTitle: "Estimate Pipeline", navItems: ["Estimates", "Projects", "Materials"],
-    statLabel: "Estimates", statValue: "19", listItems: ["Privacy Fence", "Pool Enclosure", "Commercial Gate"],
-    heroText: "Quality Fencing Solutions", heroCta: "Free Estimate",
+  mechanic: {
+    icon: Car, label: "Mechanic", accent: "#64748B",
+    screenTitle: "Service Queue", navItems: ["Jobs", "Vehicles", "Parts"],
+    statLabel: "In Shop", statValue: "8", listItems: ["Oil Change — Bay 1", "Brake Job — Bay 2", "Diagnostics — Bay 3"],
+    heroText: "Expert Auto Repair & Service", heroCta: "Book Service",
+  },
+  "pressure-washing": {
+    icon: Droplets, label: "Pressure Washing", accent: "#22D3EE",
+    screenTitle: "Job Scheduler", navItems: ["Jobs", "Routes", "Clients"],
+    statLabel: "This Week", statValue: "22", listItems: ["Driveway — Mon", "Deck Wash — Wed", "Commercial — Fri"],
+    heroText: "Professional Pressure Washing", heroCta: "Get Quote",
+  },
+  mortgage: {
+    icon: Landmark, label: "Mortgage", accent: "#34D399",
+    screenTitle: "Loan Pipeline", navItems: ["Applications", "Clients", "Rates"],
+    statLabel: "In Process", statValue: "34", listItems: ["Pre-Approval", "Under Review", "Closing Sched."],
+    heroText: "Find Your Best Mortgage Rate", heroCta: "Apply Now",
   },
 };
 
